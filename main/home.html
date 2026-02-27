@@ -5,12 +5,24 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Home</title>
 <style>
-*{margin:0;padding:0;box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+-webkit-tap-highlight-color:transparent
+}
 body{
 background:#11111b;
 font-family:system-ui,Arial,Helvetica,sans-serif;
 color:#ffffff;
-min-height:100vh
+min-height:100vh;
+overflow-x:hidden;
+}
+.blur-background{
+transition:filter 0.3s;
+}
+nav, .blur-background > *{
+transition:filter 0.3s;
 }
 nav{
 position:fixed;
@@ -26,8 +38,9 @@ border-radius:10px;
 display:flex;
 justify-content:space-between;
 align-items:center;
-padding:14px 20px;
-z-index:1000
+padding:16px 24px;
+z-index:1000;
+overflow:visible
 }
 .nav-left{
 font-weight:700;
@@ -38,41 +51,136 @@ white-space:nowrap
 .nav-right{
 display:flex;
 align-items:center;
-gap:28px
+justify-content:flex-end;
+gap:28px;
+flex-wrap:nowrap
 }
 .nav-right img{
-width:22px;
-height:22px;
+width:26px;
+height:26px;
+min-width:26px;
+min-height:26px;
 object-fit:contain;
+display:block;
 filter:brightness(0) invert(1);
 cursor:pointer;
-transition:0.3s;
-border-radius:10px
+transition:0.25s;
+padding:2px
 }
 .nav-right img:hover{
-transform:scale(1.1);
-opacity:0.8
+transform:scale(1.12);
+opacity:0.85
+}
+.sheet-menu{
+position:fixed;
+bottom:-100%;
+left:0;
+width:100%;
+background:#181825;
+border-top:1px solid #3c2759;
+border-radius:16px 16px 0 0;
+transition:bottom 0.35s ease-in-out;
+z-index:1100;
+padding:16px 0;
+max-height:90vh;
+overflow-y:auto;
+scrollbar-width:thin;
+scrollbar-color:rgba(196,167,231,0.6) transparent;
+}
+.sheet-menu::-webkit-scrollbar{
+width:6px;
+background:transparent;
+}
+.sheet-menu::-webkit-scrollbar-thumb{
+background:rgba(196,167,231,0.6);
+border-radius:10px;
+}
+.sheet-handle{
+width:50px;
+height:5px;
+background:#3c2759;
+border-radius:10px;
+margin:0 auto 16px auto;
+cursor:pointer
+}
+.sheet-option{
+display:flex;
+align-items:center;
+gap:16px;
+padding:12px 24px;
+color:#ffffff;
+cursor:pointer;
+transition:background 0.2s;
+text-decoration:none;
+width:98%;
+margin:0 auto;
+border-radius:10px;
+}
+.sheet-option:hover{
+background:rgba(196,167,231,0.25);
+border-radius:10px;
+}
+.sheet-option img{
+width:20px;
+height:20px;
+object-fit:contain;
+filter:brightness(0) invert(1);
 }
 @media(max-width:768px){
 .nav-left{display:none}
 nav{justify-content:center}
-.nav-right{
-width:100%;
-justify-content:space-evenly;
-gap:0
-}
+.nav-right{width:100%;justify-content:space-evenly;gap:0}
 }
 </style>
 </head>
 <body>
+<div class="blur-background">
 <nav>
 <div class="nav-left">NexusByte SMM</div>
 <div class="nav-right">
 <img src="https://devnbi.github.io/NexusByte-SMM/assets/media/icons/home.png" alt="Home">
-<img src="https://devnbi.github.io/NexusByte-SMM/assets/media/icons/services.png" alt="Services">
+<img id="menu-trigger" src="https://devnbi.github.io/NexusByte-SMM/assets/media/icons/services.png" alt="Services">
 <img src="https://devnbi.github.io/NexusByte-SMM/assets/media/icons/information.png" alt="Information">
 <img src="https://devnbi.github.io/NexusByte-SMM/assets/media/icons/menu.png" alt="Menu">
 </div>
 </nav>
+</div>
+<div id="sheet" class="sheet-menu">
+<div class="sheet-handle" id="sheet-close"></div>
+<a class="sheet-option" href="#"><img src="https://devnbi.github.io/NexusByte-SMM/assets/media/icons/services/facebook.png" alt="Facebook">Facebook</a>
+<a class="sheet-option" href="#"><img src="https://devnbi.github.io/NexusByte-SMM/assets/media/icons/services/messenger.png" alt="Messenger">Messenger</a>
+<a class="sheet-option" href="#"><img src="https://devnbi.github.io/NexusByte-SMM/assets/media/icons/services/instagram.png" alt="Instagram">Instagram</a>
+<a class="sheet-option" href="#"><img src="https://devnbi.github.io/NexusByte-SMM/assets/media/icons/services/threads.png" alt="Threads">Threads</a>
+<a class="sheet-option" href="#"><img src="https://devnbi.github.io/NexusByte-SMM/assets/media/icons/services/whatsapp.png" alt="WhatsApp">WhatsApp</a>
+<a class="sheet-option" href="#"><img src="https://devnbi.github.io/NexusByte-SMM/assets/media/icons/services/telegram.png" alt="Telegram">Telegram</a>
+<a class="sheet-option" href="#"><img src="https://devnbi.github.io/NexusByte-SMM/assets/media/icons/services/snapchat.png" alt="SnapChat">SnapChat</a>
+<a class="sheet-option" href="#"><img src="https://devnbi.github.io/NexusByte-SMM/assets/media/icons/services/tiktok.png" alt="TikTok">TikTok</a>
+<a class="sheet-option" href="#"><img src="https://devnbi.github.io/NexusByte-SMM/assets/media/icons/services/x.png" alt="Option">X</a>
+<a class="sheet-option" href="#"><img src="https://devnbi.github.io/NexusByte-SMM/assets/media/icons/services/discord.png" alt="Discord">Discord</a>
+<a class="sheet-option" href="#"><img src="https://devnbi.github.io/NexusByte-SMM/assets/media/icons/services/youtube.png" alt="YouTube">YouTube</a>
+<a class="sheet-option" href="#"><img src="https://devnbi.github.io/NexusByte-SMM/assets/media/icons/services/spotify.png" alt="Spotify">Spotify</a>
+<a class="sheet-option" href="#"><img src="" alt="SoundCloud">SoundCloud</a>
+<a class="sheet-option" href="#"><img src="" alt="Reddit">Reddit</a>
+<a class="sheet-option" href="#"><img src="" alt="Pinterest">Pinterest</a>
+<a class="sheet-option" href="#"><img src="" alt="Twitch">Twitch</a>
+<a class="sheet-option" href="#"><img src="" alt="Kik">Kik</a>
+<a class="sheet-option" href="#"><img src="" alt="RatingsAndReviews">Ratings & Reviews</a>
+<a class="sheet-option" href="#"><img src="" alt="AppStoreDownloads">AppStore Downloads</a>
+<a class="sheet-option" href="#"><img src="" alt="Traffic">Traffic</a>
+</div>
+<script>
+const sheet = document.getElementById('sheet');
+const trigger = document.getElementById('menu-trigger');
+const closeHandle = document.getElementById('sheet-close');
+const blurContainer = document.querySelector('.blur-background');
+trigger.addEventListener('click',()=>{
+blurContainer.style.filter='blur(6px)';
+sheet.style.bottom='0'
+});
+closeHandle.addEventListener('click',()=>{
+blurContainer.style.filter='none';
+sheet.style.bottom='-100%'
+});
+</script>
 </body>
 </html>
