@@ -48,4 +48,4 @@ If you require some assistance, you can join our Discord server [here](https://d
 ---
 
 ### Contact
-To get in contact, you can message us via our Discord server (found above), ot you can email us [here](<a href="mailto:init.nexusbyte@gmail.com">)
+To get in contact, you can message us via our Discord server (found above), or you can email us at [init.nexusbyte@gmail.com](mailto:init.nexusbyte@gmail.com)
