@@ -1,0 +1,21 @@
+• Background Colour: #11111b
+• Main Body Colour: #181825
+• Secondary Body Colour: #1e1e2e
+• Bar Colour: #313244
+• Input Bar Colour: #313244
+• Menu Colour: #40384c
+• Card Colour: #494c5e
+• Navigation Colour: #3f3750
+• Footer Colour: #3f3750
+• Button Colour: #231c2f
+• Border Colour: #3c2759
+• Highlight Colour: #c4a7e7
+• Icon Colour: #ffffff
+• Header Text Colour: #b19cd7
+• SubHeader Text Colour: #c0afe2
+• Regular Text Colour: #ffffff
+• Fine Print Text Colour: #ddd5f3
+• Hyperlink Text Colour: #ebe8fc
+• Corner Radius: 10PX
+• Responsive Styling: All Pages
+• User Experience: Default highlighting disabled

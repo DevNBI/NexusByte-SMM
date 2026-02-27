@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Home</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+body{
+background:#11111b;
+font-family:system-ui,Arial,Helvetica,sans-serif;
+color:#ffffff;
+min-height:100vh
+}
+nav{
+position:fixed;
+top:15px;
+left:50%;
+transform:translateX(-50%);
+width:99%;
+background:rgba(63,55,80,0.55);
+backdrop-filter:blur(14px);
+-webkit-backdrop-filter:blur(14px);
+border:1px solid #3c2759;
+border-radius:10px;
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:14px 20px;
+z-index:1000
+}
+.nav-left{
+font-weight:700;
+color:#b19cd7;
+font-size:18px;
+white-space:nowrap
+}
+.nav-right{
+display:flex;
+align-items:center;
+gap:28px
+}
+.nav-right img{
+width:22px;
+height:22px;
+object-fit:contain;
+filter:brightness(0) invert(1);
+cursor:pointer;
+transition:0.3s;
+border-radius:10px
+}
+.nav-right img:hover{
+transform:scale(1.1);
+opacity:0.8
+}
+@media(max-width:768px){
+.nav-left{display:none}
+nav{justify-content:center}
+.nav-right{
+width:100%;
+justify-content:space-evenly;
+gap:0
+}
+}
+</style>
+</head>
+<body>
+<nav>
+<div class="nav-left">NexusByte SMM</div>
+<div class="nav-right">
+<img src="https://devnbi.github.io/NexusByte-SMM/assets/media/icons/home.png" alt="Home">
+<img src="https://devnbi.github.io/NexusByte-SMM/assets/media/icons/services.png" alt="Services">
+<img src="https://devnbi.github.io/NexusByte-SMM/assets/media/icons/information.png" alt="Information">
+<img src="https://devnbi.github.io/NexusByte-SMM/assets/media/icons/menu.png" alt="Menu">
+</div>
+</nav>
+</body>
+</html>
