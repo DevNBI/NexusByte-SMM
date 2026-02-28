@@ -170,6 +170,56 @@ filter:brightness(0) invert(1);
 nav{justify-content:center}
 .nav-right{width:100%;justify-content:space-evenly;gap:0}
 }
+
+.main-body{
+margin-top:80px;
+padding:20px;
+border:1px solid #3c2759;
+border-radius:10px;
+display:flex;
+flex-direction:column;
+gap:20px;
+min-height:calc(100vh - 130px);
+}
+.main-header{
+font-weight:bold;
+font-size:18px;
+}
+.main-subtext{
+font-weight:normal;
+font-size:14px;
+color:#dcdcdc;
+margin-top:5px;
+}
+.bar{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:12px 16px;
+background:rgba(63,55,80,0.3);
+border-radius:10px;
+transition:background 0.2s;
+}
+.bar:hover{
+background:rgba(196,167,231,0.25);
+}
+.bar-left{
+font-weight:600;
+}
+.bar-right{
+font-size:12px;
+color:#dcdcdc;
+}
+.footer{
+width:100%;
+text-align:center;
+padding:16px 0;
+border-top:1px solid #3c2759;
+position:fixed;
+bottom:0;
+left:0;
+background:#201529;
+}
 </style>
 </head>
 <body>
@@ -185,9 +235,25 @@ nav{justify-content:center}
 </div>
 </nav>
 
+<div class="main-body">
+<div>
+<div class="main-header">Subscriptions</div>
+<div class="main-subtext">Subscriptions have a few extra perks rather than just purchasing our services directly. Purchasing one of the subscriptions below will give you credits. These credits can be used to purchase more of our serices upon checkout. All subscriptions last for 1 month before requirement of renewing.</div>
+</div>
+
+<div class="bar"><div class="bar-left">£02.00 - Bronze</div><div class="bar-right">300 credits</div></div>
+<div class="bar"><div class="bar-left">£03.75 - Silver</div><div class="bar-right">500 credits</div></div>
+<div class="bar"><div class="bar-left">£05.00 - Gold</div><div class="bar-right">750 credits</div></div>
+<div class="bar"><div class="bar-left">£07.00 - Diamond</div><div class="bar-right">1,000 credits</div></div>
+<div class="bar"><div class="bar-left">£10.00 - Platinum</div><div class="bar-right">2,500 credits</div></div>
+<div class="bar"><div class="bar-left">£14.00 - Obsidian</div><div class="bar-right">5,000 credits</div></div>
+<div class="bar"><div class="bar-left">£18.00 - Legendary</div><div class="bar-right">10,000 credits</div></div>
+</div>
+
+<div class="footer">© NexusByte SMM 2026. All rights reserved.</div>
+
 <div id="sheet" class="sheet-menu">
 <div class="sheet-handle" id="sheet-close"></div>
-
 <a class="sheet-option" href="https://devnbi.github.io/NexusByte-SMM/main/services/facebook.html"><img src="https://devnbi.github.io/NexusByte-SMM/assets/media/icons/services/facebook.png">Facebook</a>
 <a class="sheet-option" href="https://devnbi.github.io/NexusByte-SMM/main/services/messenger.html"><img src="https://devnbi.github.io/NexusByte-SMM/assets/media/icons/services/messenger.png">Messenger</a>
 <a class="sheet-option" href="https://devnbi.github.io/NexusByte-SMM/main/services/telegram.html"><img src="https://devnbi.github.io/NexusByte-SMM/assets/media/icons/services/instagram.png">Instagram</a>
@@ -208,24 +274,13 @@ nav{justify-content:center}
 <a class="sheet-option" href="https://devnbi.github.io/NexusByte-SMM/main/services/ratings-and-reviews.html"><img src="https://devnbi.github.io/NexusByte-SMM/assets/media/icons/services/ratings-and-reviews.png">Ratings & Reviews</a>
 <a class="sheet-option" href="https://devnbi.github.io/NexusByte-SMM/main/services/appstore-downloads.html"><img src="https://devnbi.github.io/NexusByte-SMM/assets/media/icons/services/appstore-downloads.png">AppStore Downloads</a>
 <a class="sheet-option" href="https://devnbi.github.io/NexusByte-SMM/main/services/traffic.html"><img src="https://devnbi.github.io/NexusByte-SMM/assets/media/icons/services/traffic.png">Traffic</a>
-
 </div>
 
 <div id="secondary-sheet" class="sheet-menu-secondary">
 <div class="sheet-handle" id="secondary-sheet-close"></div>
-
-<a class="sheet-option" href="https://discord.com">
-<img src="https://devnbi.github.io/NexusByte-SMM/assets/media/icons/discord.png">Discord Server
-</a>
-
-<a class="sheet-option" href="https://github.com/devnbi/NexusByte-SMM">
-<img src="https://devnbi.github.io/NexusByte-SMM/assets/media/icons/github.png">GitHub Repository
-</a>
-
-<div class="sheet-option" onclick="window.close()">
-<img src="https://devnbi.github.io/NexusByte-SMM/assets/media/icons/exit.png">Exit Website
-</div>
-
+<a class="sheet-option" href="https://discord.com"><img src="https://devnbi.github.io/NexusByte-SMM/assets/media/icons/discord.png">Discord Server</a>
+<a class="sheet-option" href="https://github.com/devnbi/NexusByte-SMM"><img src="https://devnbi.github.io/NexusByte-SMM/assets/media/icons/github.png">GitHub Repository</a>
+<div class="sheet-option" onclick="window.close()"><img src="https://devnbi.github.io/NexusByte-SMM/assets/media/icons/exit.png">Exit Website</div>
 </div>
 
 <script>
