@@ -19,12 +19,6 @@ color:#ffffff;
 min-height:100vh;
 overflow-x:hidden;
 }
-.blur-background{
-transition:filter 0.3s;
-}
-.blur-background > *{
-transition:filter 0.3s;
-}
 nav{
 position:fixed;
 top:15px;
@@ -73,6 +67,35 @@ transform:scale(1.12);
 opacity:0.85
 }
 
+.info-body{
+width:99%;
+margin:110px auto 30px auto;
+background:#181825;
+border:1px solid #3c2759;
+border-radius:10px;
+padding:24px;
+}
+.info-section{
+margin-bottom:24px;
+}
+.info-body h4{
+font-weight:700;
+margin-bottom:8px;
+}
+.info-body p{
+font-size:14px;
+opacity:0.9;
+margin-bottom:0;
+}
+
+footer{
+width:99%;
+margin:40px auto 0 auto;
+padding:20px;
+text-align:center;
+border-top:1px solid #3c2759;
+}
+
 .sheet-menu{
 position:fixed;
 bottom:-100%;
@@ -102,7 +125,6 @@ display:none;
 height:0;
 width:0;
 }
-
 .sheet-menu-secondary{
 position:fixed;
 bottom:-100%;
@@ -132,7 +154,6 @@ display:none;
 height:0;
 width:0;
 }
-
 .sheet-handle{
 width:50px;
 height:5px;
@@ -164,7 +185,6 @@ height:35px;
 object-fit:contain;
 filter:brightness(0) invert(1);
 }
-
 @media(max-width:768px){
 .nav-left{display:none}
 nav{justify-content:center}
@@ -185,9 +205,35 @@ nav{justify-content:center}
 </div>
 </nav>
 
+<div class="info-body">
+<div class="info-section">
+<h4>Services</h4>
+<p>Our services are some of the cheapest you will find. While our organic services cost a bit extra, they are still quite affordable. So you can grow your social presence without breaking the bank. We also add new services as well as improve existing services 24/7. This makes us more reliable than most SMM or social growth platforms out there. If something breaks or changes on a social platform, we find a way around it instantly.</p>
+</div>
+<div class="info-section">
+<h4>Payment & Refunds</h4>
+<p>We accept several payment methods such as debit / credit cards, Stripe, PayPal, Payeer, Robokasa, CashApp, Venmo, crypto currency, gift cards (Google Play, Apple, PlayStation, Xbox & Nintendo) and virtual currencies (V-bucks, Robux, COD Points & MineCoins). We're aware that not everyone has access to some of the listed payment methods. That's why we've added as many as we possibly can, so that our services are accessible to everyone. If you're not happy with our services or run into any issues after purchasing, you can get a refund within 48 hours of purchase.</p>
+</div>
+<div class="info-section">
+<h4>Delivery</h4>
+<p>After purchasing our services, delivery is instant. Many SMM services also promise this but we're different. Our services get delivered in a way that won't make your account look suspicious. Social media platforms will not flag your account or retract statistics or analytics. This is our major selling point and it will never change. Even if our services don't reach your targeted platforms instantly, we promise that they will be delivered within a few hours at most.</p>
+</div>
+<div class="info-section">
+<h4>Our Team</h4>
+<p>NexusByte Initiative itself (our parent company) only has a total of 12 members. 2 of those members are assigned to NexusByte SMM. That doesn't affect our ability to offer help and assistance though. If you reach out, we guarentee that you'll receive a response within 30 minutes. You can get in contact via our Discord server (found in the menu in the navigation bar).</p>
+</div>
+<div class="info-section">
+<h4>Privacy & Data</h4>
+<p>There's a lot of concern when it comes to your privacy and data when using SMM services and platforms. Rest assured that we do not collect any of your information or data, not even your IP address or browser information. We have no reason to, if you're purchasing our services, we're making money. That's enough for us so we have no reason to sell your data or private information to third parties.</p>
+</div>
+</div>
+
+<footer>
+© NexusByte SMM 2026. All rights reserved.
+</footer>
+
 <div id="sheet" class="sheet-menu">
 <div class="sheet-handle" id="sheet-close"></div>
-
 <a class="sheet-option" href="https://devnbi.github.io/NexusByte-SMM/main/services/facebook.html"><img src="https://devnbi.github.io/NexusByte-SMM/assets/media/icons/services/facebook.png">Facebook</a>
 <a class="sheet-option" href="https://devnbi.github.io/NexusByte-SMM/main/services/messenger.html"><img src="https://devnbi.github.io/NexusByte-SMM/assets/media/icons/services/messenger.png">Messenger</a>
 <a class="sheet-option" href="https://devnbi.github.io/NexusByte-SMM/main/services/telegram.html"><img src="https://devnbi.github.io/NexusByte-SMM/assets/media/icons/services/instagram.png">Instagram</a>
@@ -208,50 +254,32 @@ nav{justify-content:center}
 <a class="sheet-option" href="https://devnbi.github.io/NexusByte-SMM/main/services/ratings-and-reviews.html"><img src="https://devnbi.github.io/NexusByte-SMM/assets/media/icons/services/ratings-and-reviews.png">Ratings & Reviews</a>
 <a class="sheet-option" href="https://devnbi.github.io/NexusByte-SMM/main/services/appstore-downloads.html"><img src="https://devnbi.github.io/NexusByte-SMM/assets/media/icons/services/appstore-downloads.png">AppStore Downloads</a>
 <a class="sheet-option" href="https://devnbi.github.io/NexusByte-SMM/main/services/traffic.html"><img src="https://devnbi.github.io/NexusByte-SMM/assets/media/icons/services/traffic.png">Traffic</a>
-
 </div>
 
 <div id="secondary-sheet" class="sheet-menu-secondary">
 <div class="sheet-handle" id="secondary-sheet-close"></div>
-
 <a class="sheet-option" href="https://discord.com">
 <img src="https://devnbi.github.io/NexusByte-SMM/assets/media/icons/discord.png">Discord Server
 </a>
-
 <a class="sheet-option" href="https://github.com/devnbi/NexusByte-SMM">
 <img src="https://devnbi.github.io/NexusByte-SMM/assets/media/icons/github.png">GitHub Repository
 </a>
-
 <div class="sheet-option" onclick="window.close()">
 <img src="https://devnbi.github.io/NexusByte-SMM/assets/media/icons/exit.png">Exit Website
 </div>
-
 </div>
 
 <script>
 const sheet = document.getElementById('sheet');
 const trigger = document.getElementById('menu-trigger');
 const closeHandle = document.getElementById('sheet-close');
-
 const secondarySheet = document.getElementById('secondary-sheet');
 const secondaryTrigger = document.getElementById('secondary-menu-trigger');
 const secondaryCloseHandle = document.getElementById('secondary-sheet-close');
-
-trigger.addEventListener('click',()=>{
-sheet.style.bottom='0'
-});
-
-closeHandle.addEventListener('click',()=>{
-sheet.style.bottom='-100%'
-});
-
-secondaryTrigger.addEventListener('click',()=>{
-secondarySheet.style.bottom='0'
-});
-
-secondaryCloseHandle.addEventListener('click',()=>{
-secondarySheet.style.bottom='-100%'
-});
+trigger.addEventListener('click',()=>{sheet.style.bottom='0'});
+closeHandle.addEventListener('click',()=>{sheet.style.bottom='-100%'});
+secondaryTrigger.addEventListener('click',()=>{secondarySheet.style.bottom='0'});
+secondaryCloseHandle.addEventListener('click',()=>{secondarySheet.style.bottom='-100%'});
 </script>
 
 </body>
