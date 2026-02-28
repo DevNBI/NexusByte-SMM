@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Subscriptions</title>
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+-webkit-tap-highlight-color:transparent
+}
+body{
+background:#11111b;
+font-family:system-ui,Arial,Helvetica,sans-serif;
+color:#ffffff;
+min-height:100vh;
+overflow-x:hidden;
+}
+.blur-background{
+transition:filter 0.3s;
+}
+.blur-background > *{
+transition:filter 0.3s;
+}
+nav{
+position:fixed;
+top:15px;
+left:50%;
+transform:translateX(-50%);
+width:99%;
+background:rgba(63,55,80,0.55);
+backdrop-filter:blur(14px);
+-webkit-backdrop-filter:blur(14px);
+border:1px solid #3c2759;
+border-radius:10px;
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:16px 24px;
+z-index:1000;
+overflow:visible
+}
+.nav-left{
+font-weight:700;
+color:#b19cd7;
+font-size:18px;
+white-space:nowrap
+}
+.nav-right{
+display:flex;
+align-items:center;
+justify-content:flex-end;
+gap:28px;
+flex-wrap:nowrap
+}
+.nav-right img{
+width:26px;
+height:26px;
+min-width:26px;
+min-height:26px;
+object-fit:contain;
+display:block;
+filter:brightness(0) invert(1);
+cursor:pointer;
+transition:0.25s;
+padding:2px
+}
+.nav-right img:hover{
+transform:scale(1.12);
+opacity:0.85
+}
+
+.sheet-menu{
+position:fixed;
+bottom:-100%;
+left:0;
+width:100%;
+background:#181825;
+border-top:1px solid #3c2759;
+border-radius:16px 16px 0 0;
+transition:bottom 0.35s ease-in-out;
+z-index:9999;
+padding:16px 0;
+max-height:90vh;
+overflow-y:auto;
+scrollbar-width:thin;
+scrollbar-color:rgba(196,167,231,0.6) transparent;
+}
+.sheet-menu::-webkit-scrollbar{
+width:6px;
+background:transparent;
+}
+.sheet-menu::-webkit-scrollbar-thumb{
+background:rgba(196,167,231,0.6);
+border-radius:10px;
+}
+.sheet-menu::-webkit-scrollbar-button{
+display:none;
+height:0;
+width:0;
+}
+
+.sheet-menu-secondary{
+position:fixed;
+bottom:-100%;
+left:0;
+width:100%;
+background:#181825;
+border-top:1px solid #3c2759;
+border-radius:16px 16px 0 0;
+transition:bottom 0.35s ease-in-out;
+z-index:9999;
+padding:16px 0;
+max-height:90vh;
+overflow-y:auto;
+scrollbar-width:thin;
+scrollbar-color:rgba(196,167,231,0.6) transparent;
+}
+.sheet-menu-secondary::-webkit-scrollbar{
+width:6px;
+background:transparent;
+}
+.sheet-menu-secondary::-webkit-scrollbar-thumb{
+background:rgba(196,167,231,0.6);
+border-radius:10px;
+}
+.sheet-menu-secondary::-webkit-scrollbar-button{
+display:none;
+height:0;
+width:0;
+}
+
+.sheet-handle{
+width:50px;
+height:5px;
+background:#3c2759;
+border-radius:10px;
+margin:0 auto 16px auto;
+cursor:pointer
+}
+.sheet-option{
+display:flex;
+align-items:center;
+gap:16px;
+padding:12px 24px;
+color:#ffffff;
+cursor:pointer;
+transition:background 0.2s;
+text-decoration:none;
+width:98%;
+margin:0 auto;
+border-radius:10px;
+}
+.sheet-option:hover{
+background:rgba(196,167,231,0.25);
+border-radius:10px;
+}
+.sheet-option img{
+width:35px;
+height:35px;
+object-fit:contain;
+filter:brightness(0) invert(1);
+}
+
+@media(max-width:768px){
+.nav-left{display:none}
+nav{justify-content:center}
+.nav-right{width:100%;justify-content:space-evenly;gap:0}
+}
+</style>
+</head>
+<body>
+
+<nav>
+<div class="nav-left">NexusByte SMM</div>
+<div class="nav-right">
+<img src="https://devnbi.github.io/NexusByte-SMM/assets/media/icons/home.png" onclick="window.location.href='https://devnbi.github.io/NexusByte-SMM/main/home.html'" alt="Home">
+<img id="menu-trigger" src="https://devnbi.github.io/NexusByte-SMM/assets/media/icons/services.png" alt="Services">
+<img src="https://devnbi.github.io/NexusByte-SMM/assets/media/icons/search.png" onclick="window.location.href='https://devnbi.github.io/NexusByte-SMM/main/search.html'" alt="Search">
+<img src="https://devnbi.github.io/NexusByte-SMM/assets/media/icons/information.png" onclick="window.location.href='https://devnbi.github.io/NexusByte-SMM/main/information.html'" alt="Information">
+<img id="secondary-menu-trigger" src="https://devnbi.github.io/NexusByte-SMM/assets/media/icons/menu.png" alt="Menu">
+</div>
+</nav>
+
+<div id="sheet" class="sheet-menu">
+<div class="sheet-handle" id="sheet-close"></div>
+
+<a class="sheet-option" href="https://devnbi.github.io/NexusByte-SMM/main/services/facebook.html"><img src="https://devnbi.github.io/NexusByte-SMM/assets/media/icons/services/facebook.png">Facebook</a>
+<a class="sheet-option" href="https://devnbi.github.io/NexusByte-SMM/main/services/messenger.html"><img src="https://devnbi.github.io/NexusByte-SMM/assets/media/icons/services/messenger.png">Messenger</a>
+<a class="sheet-option" href="https://devnbi.github.io/NexusByte-SMM/main/services/telegram.html"><img src="https://devnbi.github.io/NexusByte-SMM/assets/media/icons/services/instagram.png">Instagram</a>
+<a class="sheet-option" href="https://devnbi.github.io/NexusByte-SMM/main/services/threads.html"><img src="https://devnbi.github.io/NexusByte-SMM/assets/media/icons/services/threads.png">Threads</a>
+<a class="sheet-option" href="https://devnbi.github.io/NexusByte-SMM/main/services/whatsapp.html"><img src="https://devnbi.github.io/NexusByte-SMM/assets/media/icons/services/whatsapp.png">WhatsApp</a>
+<a class="sheet-option" href="https://devnbi.github.io/NexusByte-SMM/main/services/telegram.html"><img src="https://devnbi.github.io/NexusByte-SMM/assets/media/icons/services/telegram.png">Telegram</a>
+<a class="sheet-option" href="https://devnbi.github.io/NexusByte-SMM/main/services/snapchat.html"><img src="https://devnbi.github.io/NexusByte-SMM/assets/media/icons/services/snapchat.png">SnapChat</a>
+<a class="sheet-option" href="https://devnbi.github.io/NexusByte-SMM/main/services/tiktok.html"><img src="https://devnbi.github.io/NexusByte-SMM/assets/media/icons/services/tiktok.png">TikTok</a>
+<a class="sheet-option" href="https://devnbi.github.io/NexusByte-SMM/main/services/x.html"><img src="https://devnbi.github.io/NexusByte-SMM/assets/media/icons/services/x.png">X</a>
+<a class="sheet-option" href="https://devnbi.github.io/NexusByte-SMM/main/services/discord.html"><img src="https://devnbi.github.io/NexusByte-SMM/assets/media/icons/services/discord.png">Discord</a>
+<a class="sheet-option" href="https://devnbi.github.io/NexusByte-SMM/main/services/youtube.html"><img src="https://devnbi.github.io/NexusByte-SMM/assets/media/icons/services/youtube.png">YouTube</a>
+<a class="sheet-option" href="https://devnbi.github.io/NexusByte-SMM/main/services/spotify.html"><img src="https://devnbi.github.io/NexusByte-SMM/assets/media/icons/services/spotify.png">Spotify</a>
+<a class="sheet-option" href="https://devnbi.github.io/NexusByte-SMM/main/services/soundcloud.html"><img src="https://devnbi.github.io/NexusByte-SMM/assets/media/icons/services/soundcloud.png">SoundCloud</a>
+<a class="sheet-option" href="https://devnbi.github.io/NexusByte-SMM/main/services/reddit.html"><img src="https://devnbi.github.io/NexusByte-SMM/assets/media/icons/services/reddit.png">Reddit</a>
+<a class="sheet-option" href="https://devnbi.github.io/NexusByte-SMM/main/services/pinterest.html"><img src="https://devnbi.github.io/NexusByte-SMM/assets/media/icons/services/pinterest.png">Pinterest</a>
+<a class="sheet-option" href="https://devnbi.github.io/NexusByte-SMM/main/services/twitch.html"><img src="https://devnbi.github.io/NexusByte-SMM/assets/media/icons/services/twitch.png">Twitch</a>
+<a class="sheet-option" href="https://devnbi.github.io/NexusByte-SMM/main/services/kik.html"><img src="https://devnbi.github.io/NexusByte-SMM/assets/media/icons/services/kik.png">Kik</a>
+<a class="sheet-option" href="https://devnbi.github.io/NexusByte-SMM/main/services/ratings-and-reviews.html"><img src="https://devnbi.github.io/NexusByte-SMM/assets/media/icons/services/ratings-and-reviews.png">Ratings & Reviews</a>
+<a class="sheet-option" href="https://devnbi.github.io/NexusByte-SMM/main/services/appstore-downloads.html"><img src="https://devnbi.github.io/NexusByte-SMM/assets/media/icons/services/appstore-downloads.png">AppStore Downloads</a>
+<a class="sheet-option" href="https://devnbi.github.io/NexusByte-SMM/main/services/traffic.html"><img src="https://devnbi.github.io/NexusByte-SMM/assets/media/icons/services/traffic.png">Traffic</a>
+
+</div>
+
+<div id="secondary-sheet" class="sheet-menu-secondary">
+<div class="sheet-handle" id="secondary-sheet-close"></div>
+
+<a class="sheet-option" href="https://discord.com">
+<img src="https://devnbi.github.io/NexusByte-SMM/assets/media/icons/discord.png">Discord Server
+</a>
+
+<a class="sheet-option" href="https://github.com/devnbi/NexusByte-SMM">
+<img src="https://devnbi.github.io/NexusByte-SMM/assets/media/icons/github.png">GitHub Repository
+</a>
+
+<div class="sheet-option" onclick="window.close()">
+<img src="https://devnbi.github.io/NexusByte-SMM/assets/media/icons/exit.png">Exit Website
+</div>
+
+</div>
+
+<script>
+const sheet = document.getElementById('sheet');
+const trigger = document.getElementById('menu-trigger');
+const closeHandle = document.getElementById('sheet-close');
+
+const secondarySheet = document.getElementById('secondary-sheet');
+const secondaryTrigger = document.getElementById('secondary-menu-trigger');
+const secondaryCloseHandle = document.getElementById('secondary-sheet-close');
+
+trigger.addEventListener('click',()=>{
+sheet.style.bottom='0'
+});
+
+closeHandle.addEventListener('click',()=>{
+sheet.style.bottom='-100%'
+});
+
+secondaryTrigger.addEventListener('click',()=>{
+secondarySheet.style.bottom='0'
+});
+
+secondaryCloseHandle.addEventListener('click',()=>{
+secondarySheet.style.bottom='-100%'
+});
+</script>
+
+</body>
+</html>
