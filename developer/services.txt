@@ -371,69 +371,69 @@ Kik
 • Bot Replies
 
 Spotify
-• Song Streams
-• Monthly Listeners
-• Followers
-• Playlist Followers
-• Playlist Saves
-• Song Saves (Library)
-• Album Saves
-• Album Streams
-• Artist Profile Visits
-• Podcast Plays
-• Podcast Followers
-• Podcast Saves
-• Podcast Episode Streams
-• Release Radar Engagements
-• Discover Weekly Engagements
-• User Playlist Adds
+• Song Streams                                                       £0.00
+• Monthly Listeners                                                  £0.00
+• Followers                                                          £0.00
+• Playlist Followers                                                 £0.00
+• Playlist Saves                                                     £0.00
+• Song Saves (Library)                                               £0.00
+• Album Saves                                                        £0.00
+• Album Streams                                                      £0.00
+• Artist Profile Visits                                              £0.00
+• Podcast Plays                                                      £0.00
+• Podcast Followers                                                  £0.00
+• Podcast Saves                                                      £0.00
+• Podcast Episode Streams                                            £0.00
+• Release Radar Engagements                                          £0.00
+• Discover Weekly Engagements                                        £0.00
+• User Playlist Adds                                                 £0.00
 
 SoundCloud
-• Track Plays
-• Track Likes
-• Track RePosts
-• Track Comments
-• Custom Comments
-• Comment Likes
-• Comment Replies
-• Track Shares
-• Followers
-• Playlist Plays
-• Playlist Likes
-• Playlist RePosts
-• Profile Views
-• Podcast Plays
-• Podcast Likes
-• Podcast Comments
-• Podcast RePosts
+• Track Plays                                                        £0.00
+• Track Likes                                                        £0.00
+• Track RePosts                                                      £0.00
+• Track Comments                                                     £0.00
+• Custom Comments                                                    £0.00
+• Comment Likes                                                      £0.00
+• Comment Replies                                                    £0.00
+• Track Shares                                                       £0.00
+• Followers                                                          £0.00
+• Playlist Plays                                                     £0.00
+• Playlist Likes                                                     £0.00
+• Playlist RePosts                                                   £0.00
+• Profile Views                                                      £0.00
+• Podcast Plays                                                      £0.00
+• Podcast Likes                                                      £0.00
+• Podcast Comments                                                   £0.00
+• Podcast RePosts                                                    £0.00
 
-AppStore Downloads
-• Google Play Store
-• iOS App Store
-• Samsung Galaxy Store
-• Amazon App Store
-• F-Droid
-• Aurora
+AppStore Downloads                                                   £0.00
+• Google Play Store                                                  £0.00
+• iOS App Store                                                      £0.00
+• Samsung Galaxy Store                                               £0.00
+• Amazon App Store                                                   £0.00
+• F-Droid                                                            £0.00
+• Aurora                                                             £0.00
 
 Traffic
-• Link Clicks / Taps
-• Website Visits
+• Link Clicks / Taps                                                 £0.00
+• Website Visits                                                     £0.00
 
 Ratings & Reviews
-• 1 Star Ratings
-• 2 Star Ratings
-• 3 Star Ratings
-• 4 Star Ratings
-• 5 Star Ratings
-• Positive Reviews
-• Negative Reviews
-• 1 Star Ratings & Positive Reviews
-• 2 Star Ratings & Positive Reviews
-• 3 Star Ratings & Positive Reviews
-• 4 Star Ratings & Positive Reviews
-• 5 Star Ratings & Positive Reviews
-• 1 Star Ratings & Negative Reviews
-• 2 Star Ratings & Negative Reviews
-• 3 Star Ratings & Negative Reviews
-• 4 Star Ratings & Negative Reviews
-• 5 Star Ratings & Negative Reviews
+• 1 Star Ratings                                                     £0.00
+• 2 Star Ratings                                                     £0.00
+• 3 Star Ratings                                                     £0.00
+• 4 Star Ratings                                                     £0.00
+• 5 Star Ratings                                                     £0.00
+• Positive Reviews                                                   £0.00
+• Negative Reviews                                                   £0.00
+• 1 Star Ratings & Positive Reviews                                  £0.00
+• 2 Star Ratings & Positive Reviews                                  £0.00
+• 3 Star Ratings & Positive Reviews                                  £0.00
+• 4 Star Ratings & Positive Reviews                                  £0.00
+• 5 Star Ratings & Positive Reviews                                  £0.00
+• 1 Star Ratings & Negative Reviews                                  £0.00
+• 2 Star Ratings & Negative Reviews                                  £0.00
+• 3 Star Ratings & Negative Reviews                                  £0.00
+• 4 Star Ratings & Negative Reviews                                  £0.00
+• 5 Star Ratings & Negative Reviews                                  £0.00
