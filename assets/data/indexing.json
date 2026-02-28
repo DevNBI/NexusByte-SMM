@@ -1,0 +1,22 @@
+[
+  {"service": "Facebook", "url": "https://devnbi.github.io/NexusByte-SMM/main/services/facebook.html"},
+  {"service": "Messenger", "url": "https://devnbi.github.io/NexusByte-SMM/main/services/messenger.html"},
+  {"service": "Instagram", "url": "https://devnbi.github.io/NexusByte-SMM/main/services/telegram.html"},
+  {"service": "Threads", "url": "https://devnbi.github.io/NexusByte-SMM/main/services/threads.html"},
+  {"service": "WhatsApp", "url": "https://devnbi.github.io/NexusByte-SMM/main/services/whatsapp.html"},
+  {"service": "Telegram", "url": "https://devnbi.github.io/NexusByte-SMM/main/services/telegram.html"},
+  {"service": "SnapChat", "url": "https://devnbi.github.io/NexusByte-SMM/main/services/snapchat.html"},
+  {"service": "TikTok", "url": "https://devnbi.github.io/NexusByte-SMM/main/services/tiktok.html"},
+  {"service": "X", "url": "https://devnbi.github.io/NexusByte-SMM/main/services/x.html"},
+  {"service": "Discord", "url": "https://devnbi.github.io/NexusByte-SMM/main/services/discord.html"},
+  {"service": "YouTube", "url": "https://devnbi.github.io/NexusByte-SMM/main/services/youtube.html"},
+  {"service": "Spotify", "url": "https://devnbi.github.io/NexusByte-SMM/main/services/spotify.html"},
+  {"service": "SoundCloud", "url": "https://devnbi.github.io/NexusByte-SMM/main/services/soundcloud.html"},
+  {"service": "Reddit", "url": "https://devnbi.github.io/NexusByte-SMM/main/services/reddit.html"},
+  {"service": "Pinterest", "url": "https://devnbi.github.io/NexusByte-SMM/main/services/pinterest.html"},
+  {"service": "Twitch", "url": "https://devnbi.github.io/NexusByte-SMM/main/services/twitch.html"},
+  {"service": "Kik", "url": "https://devnbi.github.io/NexusByte-SMM/main/services/kik.html"},
+  {"service": "Ratings & Reviews", "url": "https://devnbi.github.io/NexusByte-SMM/main/services/ratings-and-reviews.html"},
+  {"service": "AppStore Downloads", "url": "https://devnbi.github.io/NexusByte-SMM/main/services/appstore-downloads.html"},
+  {"service": "Traffic", "url": "https://devnbi.github.io/NexusByte-SMM/main/services/traffic.html"}
+]
