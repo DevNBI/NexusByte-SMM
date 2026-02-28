@@ -1,0 +1,439 @@
+Facebook
+• Post Likes
+• Post Reactions
+• Post Comments
+• Custom Comments
+• Comment Likes
+• Comment Replies
+• Post Shares
+• Video Views
+• Live Stream Views
+• Live Stream Reactions
+• Live Stream Comments
+• Live Stream Shares
+• Reel Views
+• Reel Likes
+• Reel Comments
+• Reel Shares
+• Story Views
+• Story Reactions
+• Story Replies
+• Story Poll Votes
+• Story Question Responses
+• Event Responses (Interested)
+• Event Responses (Going)
+• Page Likes
+• Page Follows
+• Photo Likes
+• Photo Comments
+• Album Likes
+• Album Comments
+• Check-In Likes
+• Check-In Comments
+• Watch Party Views
+• Watch Party Reactions
+• Watch Party Comments
+• Group Post Likes
+• Group Post Comments
+• Group Post Shares
+
+Messenger
+• Message Replies
+• Message Reactions
+• Message Forwards
+• Conversation Starts
+• Messenger Clicks / Taps
+• Messenger Conversations Clicks / Taps
+• Chat Opens
+• Chat Link Clicks / Taps
+• Broadcast Message Replies
+• Broadcast Message Clicks / Taps
+• Bot Interaction Message Clicks / Taps
+• Bot Starts
+• Bot Replies
+• Bot Engagements
+• Quick Reply Clicks / Taps
+• Button Clicks / Taps
+• Menu Clicks / Taps
+• Chat Form Submissions
+
+Instagram
+• Post Likes
+• Post Comments
+• Custom Comments
+• Comment Likes
+• Comment Replies
+• Post Saves
+• Post Shares
+• Carousel Post Likes
+• Carousel Post Comments
+• Reel Views
+• Reel Likes
+• Reel Comments
+• Reel Shares
+• Reel Saves
+• Story Views
+• Story Likes
+• Story Reactions
+• Story Replies
+• Story Poll Votes
+• Story Question Responses
+• Story Quiz Votes
+• Story Link Clicks / Taps
+• Live Stream Views
+• Live Stream Likes
+• Live Stream Comments
+• Live Stream Shares
+• Live Stream Followers
+• IGTV Views
+• IGTV Likes
+• IGTV Comments
+• IGTV Shares
+• Profile Visits
+• Profile Clicks / Taps
+• Followers
+• Close Friends Story Views
+• Highlights Views
+• Highlights Likes
+• Broadcast Channel Subscribers
+• Broadcast Channel Reactions
+
+Threads
+• Post Likes
+• Post Comments
+• Custom Comments
+• Comment Likes
+• Comment Replies
+• Post RePosts
+• Quote RePosts
+• Post Shares
+• Post Saves
+• Post Views
+• Video Views
+• Followers
+• Profile Visits
+• Profile Clicks / Taps
+• Poll Votes
+• Poll Interactions
+• Mentions
+• Thread Replies
+• Thread Interactions
+
+WhatsApp
+• Group Message Replies
+• Group Message Reactions
+• Status Views
+• Status Replies
+• Status Reactions
+• Status Link Clicks / Taps
+• Broadcast Message Replies
+• Broadcast Message Clicks / Taps
+• Group Joins
+• Channel Followers
+• Channel Post Views
+• Channel Reactions
+• Channel Comments
+
+Telegram
+• Channel Subscribers
+• Channel Post Views
+• Channel Reactions
+• Channel Comments
+• Channel Shares
+• Channel Poll Votes
+• Channel Poll Interactions
+• Group Members
+• Group Message Views
+• Group Message Reactions
+• Group Message Replies
+• Group Message Shares
+• Post Clicks / Taps
+• Link Clicks / Taps
+• Bot Interactions
+• Bot Starts
+• Story Views
+• Story Reactions
+• Story Replies
+X
+
+• Tweet Likes
+• Tweet Replies
+• Custom Replies
+• Reply Likes
+• Reply ReTweets
+• Tweet ReTweets
+• Quote Tweets
+• Tweet Shares
+• Tweet Views
+• Video Views
+• Poll Votes
+• Poll Interactions
+• Thread Replies
+• Thread Likes
+• Thread Shares
+• Profile Visits
+• Profile Followers
+• Link Clicks / Taps
+• Mentions
+• Bookmarks
+• Spaces Listeners
+• Space Reactions
+
+SnapChat
+• Snap Views
+• Snap Replies
+• Snap Reactions
+• Snap Shares
+• Story Views
+• Story Replies
+• Story Reactions
+• Story Shares
+• SpotLight Views
+• SpotLight Likes
+• SpotLight Shares
+• SpotLight Comments
+• Profile Views
+• Friend Adds
+• Snap Streaks
+• Chat Replies
+• Chat Reactions
+• Group Chat Replies
+• Group Snap Views
+• Bitmoji Reactions
+• Snap Streak Increase
+
+TikTok
+• Video Likes
+• Video Comments
+• Custom Comments
+• Comment Likes
+• Comment Replies
+• Video Shares
+• Video Saves
+• Video Views
+• Watch Time Boost
+• Profile Visits
+• Followers
+• Duet Engagements
+• Stitch Engagements
+• Live Stream Views
+• Live Stream Likes
+• Live Stream Comments
+• Live Stream Shares
+• Poll Votes
+• Poll Interactions
+• Hashtag Challenge Engagements
+• Sounds / Audio Plays
+• Reaction Videos
+
+Discord
+• Server Members
+• Online Members
+• Message Reactions
+• Message Replies
+• Thread Replies
+• Thread Participants
+• Channel Message Activity
+• Voice Channel Participants
+• Voice Channel Listeners
+• Stage Event Listeners
+• Stage Event Reactions
+• Server Boosts
+• Announcement Channel Views
+• Announcement Channel Reactions
+• Invite Joins
+• Poll Votes
+• Poll Interactions
+• Link Clicks / Taps
+• Bot Command Interactions
+• Forum Post Replies
+
+YouTube
+• Video Views
+• High Retention Views
+• Watch Time
+• Video Likes
+• Video Dislikes
+• Video Comments
+• Custom Comments
+• Comment Likes
+• Comment Replies
+• Video Shares
+• Video Saves (Playlist)
+• Subscribers
+• Live Stream Views
+• Live Stream Likes
+• Live Stream Comments
+• Live Stream Shares
+• Live Stream Chat Messages
+• Premiere Views
+• Premiere Likes
+• Premiere Comments
+• Premiere Chat Messages
+• Short Views
+• Short Likes
+• Short Comments
+• Short Shares
+• Channel Views
+• Channel Likes
+• Channel Comments
+• Community Post Likes
+• Community Post Comments
+• Community Post Shares
+• Poll Votes
+• Poll Interactions
+• Story Views
+• Story Likes
+• Story Replies
+
+Reddit
+• Post UpVotes
+• Post DownVotes
+• Post Comments
+• Custom Comments
+• Comment UpVotes
+• Comment Replies
+• Post Shares
+• Post Views
+• Video Views
+• Poll Votes
+• Poll Interactions
+• Award Engagements
+• Followers
+• SubReddit Subscribers
+• CrossPost Engagements
+• Link Clicks / Taps
+• Profile Visits
+• Mentions
+
+Pinterest
+• Pin Likes
+• Pin Saves (RePins)
+• Pin Comments
+• Custom Comments
+• Comment Likes
+• Comment Replies
+• Pin Shares
+• Pin Clicks / Taps
+• Outbound Clicks / Taps
+• Pin Views (Impressions)
+• Video Pin Views
+• Video Pin Likes
+• Video Pin Comments
+• Carousel Pin Engagements
+• Idea Pin Views
+• Idea Pin Likes
+• Idea Pin Comments
+• Idea Pin Shares
+• Profile Views
+• Followers
+• Board Followers
+• Board Saves
+• Board Likes
+
+Twitch
+• Live Stream Views
+• Live Stream Views (Concurrent)
+• Live STream Chat Messages
+• Live Stream Chat Replies
+• Live Stream Reactions
+• Channel Followers
+• Channel Subscribers
+• Stream Shares
+• Gifted Subscriptions
+• Stream Shares
+• Clip Views
+• Clip Likes
+• Clip Shares
+• VOD Views
+• VOD Likes
+• Channel Views
+• Profile Visits
+• Channel Points Redemptions
+• Poll Votes
+• Hype Train Contributions
+• Raid Participants
+
+Kik
+• Message Replies
+• Message Reactions
+• Message Forwards
+• Chat Engagements
+• Conversation Starts
+• Group Joins
+• Group Message Replies
+• Group Message Reactions
+• Group Activity
+• Broadcast Message Replies
+• Link Clicks / Taps
+• Bot Interactions
+• Bot Starts
+• Bot Replies
+
+Spotify
+• Song Streams
+• Monthly Listeners
+• Followers
+• Playlist Followers
+• Playlist Saves
+• Song Saves (Library)
+• Album Saves
+• Album Streams
+• Artist Profile Visits
+• Podcast Plays
+• Podcast Followers
+• Podcast Saves
+• Podcast Episode Streams
+• Release Radar Engagements
+• Discover Weekly Engagements
+• User Playlist Adds
+
+SoundCloud
+• Track Plays
+• Track Likes
+• Track RePosts
+• Track Comments
+• Custom Comments
+• Comment Likes
+• Comment Replies
+• Track Shares
+• Followers
+• Playlist Plays
+• Playlist Likes
+• Playlist RePosts
+• Profile Views
+• Podcast Plays
+• Podcast Likes
+• Podcast Comments
+• Podcast RePosts
+
+AppStore Downloads
+• Google Play Store
+• iOS App Store
+• Samsung Galaxy Store
+• Amazon App Store
+• F-Droid
+• Aurora
+
+Traffic
+• Link Clicks / Taps
+• Website Visits
+
+Ratings & Reviews
+• 1 Star Ratings
+• 2 Star Ratings
+• 3 Star Ratings
+• 4 Star Ratings
+• 5 Star Ratings
+• Positive Reviews
+• Negative Reviews
+• 1 Star Ratings & Positive Reviews
+• 2 Star Ratings & Positive Reviews
+• 3 Star Ratings & Positive Reviews
+• 4 Star Ratings & Positive Reviews
+• 5 Star Ratings & Positive Reviews
+• 1 Star Ratings & Negative Reviews
+• 2 Star Ratings & Negative Reviews
+• 3 Star Ratings & Negative Reviews
+• 4 Star Ratings & Negative Reviews
+• 5 Star Ratings & Negative Reviews
