@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Search</title>
-<link rel="icon" type="image/png" href="https://devnbi.github.io/NexusByte-SMM/assets/media/icons/search.png">
+<link rel="icon" type="image/png" href="https://devnbi.github.io/NexusByte-SMM/assets/media/icons/subscriptions.png">
 <style>
 *{
 margin:0;
@@ -18,12 +18,8 @@ font-family:system-ui,Arial,Helvetica,sans-serif;
 color:#ffffff;
 min-height:100vh;
 overflow-x:hidden;
-}
-.blur-background{
-transition:filter 0.3s;
-}
-.blur-background > *{
-transition:filter 0.3s;
+display:flex;
+flex-direction:column;
 }
 nav{
 position:fixed;
@@ -73,6 +69,65 @@ transform:scale(1.12);
 opacity:0.85
 }
 
+.search-bar{
+width:99%;
+margin:90px auto 20px auto;
+background:#181825;
+border:1px solid #3c2759;
+border-radius:10px;
+padding:12px 16px;
+display:flex;
+align-items:center;
+gap:12px;
+}
+.search-bar img{
+width:24px;
+height:24px;
+filter:brightness(0) invert(1);
+}
+.search-bar input{
+flex:1;
+background:transparent;
+border:none;
+outline:none;
+color:#ffffff;
+font-size:16px;
+}
+.search-bar input::placeholder{
+color:#8880a0;
+}
+
+.search-body{
+flex:1;
+width:99%;
+margin:0 auto;
+border:1px solid #3c2759;
+border-radius:10px;
+background:#181825;
+padding:16px;
+overflow-y:auto;
+}
+.search-item{
+padding:10px 20px;
+border-radius:10px;
+cursor:pointer;
+width:98%;
+margin:0 auto;
+transition:background 0.2s;
+}
+.search-item:hover{
+background:rgba(196,167,231,0.25);
+}
+
+footer{
+width:100%;
+border-top:1px solid #3c2759;
+text-align:center;
+padding:16px 0;
+color:#8880a0;
+margin-top:10px;
+}
+
 .sheet-menu{
 position:fixed;
 bottom:-100%;
@@ -102,7 +157,6 @@ display:none;
 height:0;
 width:0;
 }
-
 .sheet-menu-secondary{
 position:fixed;
 bottom:-100%;
@@ -132,7 +186,6 @@ display:none;
 height:0;
 width:0;
 }
-
 .sheet-handle{
 width:50px;
 height:5px;
@@ -164,7 +217,6 @@ height:35px;
 object-fit:contain;
 filter:brightness(0) invert(1);
 }
-
 @media(max-width:768px){
 .nav-left{display:none}
 nav{justify-content:center}
@@ -184,6 +236,46 @@ nav{justify-content:center}
 <img id="secondary-menu-trigger" src="https://devnbi.github.io/NexusByte-SMM/assets/media/icons/menu.png" alt="Menu">
 </div>
 </nav>
+
+<div class="search-bar">
+<img src="https://devnbi.github.io/NexusByte-SMM/assets/media/icons/search.png" alt="icon">
+<input type="text" id="service-search" placeholder="Search for a service...">
+</div>
+
+<div class="search-body" id="search-results">
+</div>
+
+<footer>
+&copy; NexusByte SMM 2026. All rights reserved.
+</footer>
+
+<script>
+const jsonPath = 'https://devnbi.github.io/NexusByte-SMM/assets/data/indexing.json';
+let servicesData = [];
+
+fetch(jsonPath)
+.then(res => res.json())
+.then(data => { servicesData = data; })
+.catch(err => console.error('Failed to load JSON', err));
+
+const searchInput = document.getElementById('service-search');
+const resultsDiv = document.getElementById('search-results');
+
+searchInput.addEventListener('input',()=>{
+resultsDiv.innerHTML = '';
+const query = searchInput.value.toLowerCase();
+if(query === '') return;
+servicesData.forEach(item=>{
+if(item.service.toLowerCase().includes(query)){
+const div = document.createElement('div');
+div.className = 'search-item';
+div.textContent = item.service;
+div.onclick = ()=>window.location.href=item.url;
+resultsDiv.appendChild(div);
+}
+});
+});
+</script>
 
 <div id="sheet" class="sheet-menu">
 <div class="sheet-handle" id="sheet-close"></div>
@@ -208,50 +300,27 @@ nav{justify-content:center}
 <a class="sheet-option" href="https://devnbi.github.io/NexusByte-SMM/main/services/ratings-and-reviews.html"><img src="https://devnbi.github.io/NexusByte-SMM/assets/media/icons/services/ratings-and-reviews.png">Ratings & Reviews</a>
 <a class="sheet-option" href="https://devnbi.github.io/NexusByte-SMM/main/services/appstore-downloads.html"><img src="https://devnbi.github.io/NexusByte-SMM/assets/media/icons/services/appstore-downloads.png">AppStore Downloads</a>
 <a class="sheet-option" href="https://devnbi.github.io/NexusByte-SMM/main/services/traffic.html"><img src="https://devnbi.github.io/NexusByte-SMM/assets/media/icons/services/traffic.png">Traffic</a>
-
 </div>
 
 <div id="secondary-sheet" class="sheet-menu-secondary">
 <div class="sheet-handle" id="secondary-sheet-close"></div>
-
-<a class="sheet-option" href="https://discord.com">
-<img src="https://devnbi.github.io/NexusByte-SMM/assets/media/icons/discord.png">Discord Server
-</a>
-
-<a class="sheet-option" href="https://github.com/devnbi/NexusByte-SMM">
-<img src="https://devnbi.github.io/NexusByte-SMM/assets/media/icons/github.png">GitHub Repository
-</a>
-
-<div class="sheet-option" onclick="window.close()">
-<img src="https://devnbi.github.io/NexusByte-SMM/assets/media/icons/exit.png">Exit Website
-</div>
-
+<a class="sheet-option" href="https://discord.com"><img src="https://devnbi.github.io/NexusByte-SMM/assets/media/icons/discord.png">Discord Server</a>
+<a class="sheet-option" href="https://github.com/devnbi/NexusByte-SMM"><img src="https://devnbi.github.io/NexusByte-SMM/assets/media/icons/github.png">GitHub Repository</a>
+<div class="sheet-option" onclick="window.close()"><img src="https://devnbi.github.io/NexusByte-SMM/assets/media/icons/exit.png">Exit Website</div>
 </div>
 
 <script>
 const sheet = document.getElementById('sheet');
 const trigger = document.getElementById('menu-trigger');
 const closeHandle = document.getElementById('sheet-close');
-
 const secondarySheet = document.getElementById('secondary-sheet');
 const secondaryTrigger = document.getElementById('secondary-menu-trigger');
 const secondaryCloseHandle = document.getElementById('secondary-sheet-close');
 
-trigger.addEventListener('click',()=>{
-sheet.style.bottom='0'
-});
-
-closeHandle.addEventListener('click',()=>{
-sheet.style.bottom='-100%'
-});
-
-secondaryTrigger.addEventListener('click',()=>{
-secondarySheet.style.bottom='0'
-});
-
-secondaryCloseHandle.addEventListener('click',()=>{
-secondarySheet.style.bottom='-100%'
-});
+trigger.addEventListener('click',()=>{sheet.style.bottom='0'});
+closeHandle.addEventListener('click',()=>{sheet.style.bottom='-100%'});
+secondaryTrigger.addEventListener('click',()=>{secondarySheet.style.bottom='0'});
+secondaryCloseHandle.addEventListener('click',()=>{secondarySheet.style.bottom='-100%'});
 </script>
 
 </body>
